@@ -33,7 +33,7 @@ def showEachFileNumber(pyDict):
         print '%s\t%s' % (os.path.basename(key).ljust(20), pyDict[key])
 
 def main():
-    path = raw_input('Please enter the folder path: ').strip()			# 输入需要统计的文件夹路径
+    path = raw_input('Please enter the folder path: ').strip()
     pyDict = getFilePathsDict(path)
     for key in pyDict:
         pyDict[key] = countLines(key)
